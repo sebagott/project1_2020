@@ -1,0 +1,1 @@
+C is a programming language. Previous to [C++](/wiki/C++) and Java.

@@ -1,0 +1,20 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Wiki Editor - {{ title }}
+{% endblock %}
+
+{% block body %}
+    <h1> {{ title }} </h1>
+    <form action="{% url 'encyclopedia:edit' title %}" method="post">
+        {% csrf_token %}
+        {% if message %}
+        <div class="alert alert-danger" role="alert">{{ message }}</div>
+        {% endif %}
+         <p><i>Need help to format your content? Check this
+            <a href="https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax">Markdown Guide</a></i></p>
+        {{ form.as_p }}
+        <input type="Submit" value="Save">
+    </form>
+
+{% endblock %}

@@ -1,0 +1,1 @@
+JavaScript is a language for client-side processing of the HTML content of a web page.

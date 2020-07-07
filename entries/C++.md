@@ -1,0 +1,1 @@
+C++ is based on the programming language C. Adding many functionalities similar to [Java](/wiki/Java).
